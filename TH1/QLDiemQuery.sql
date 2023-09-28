@@ -62,3 +62,17 @@ select k.maKhoa,k.tenKhoa, count(sv.mssv) as SLSV
 from khoa k
 left join sinhvien sv on k.maKhoa = sv.maKhoa
 group by k.maKhoa, k.tenKhoa;
+
+# Cau 9
+
+select sv.mssv ,k.tenKhoa
+from khoa k
+left join sinhvien sv on k.maKhoa = sv.maKhoa
+where sv.hoten like '%Khang';
+
+# Cau 10
+select sv.mssv, sv.hoten, kq.maHP, kq.diem
+from sinhvien sv
+join
+ketqua kq on sv.mssv = kq.mssv
+order by sv.maKhoa ASC, sv.hoTen ASC;
