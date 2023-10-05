@@ -1,0 +1,20 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(23,23,103,1) 10%, rgba(0,212,255,1) 100%);
+}
+
+
+
+
+.button_login{
+    background-color: #295DFA;
+    color: #fff;
+}
+
+.button_login:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.form_parent{
+    background-color: #fff;
+}
